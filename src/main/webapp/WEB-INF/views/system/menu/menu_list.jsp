@@ -110,7 +110,7 @@ $(document).on("click", "#btnDelete", function(){
 </script>
 </head>
 <body>
-	<div class="row" style="height:100%; width:100%;">
+	<div id="gridWrapper" style="height:100%; width:100%;">
 			<div class="col-sm-3 sections" style="height:100%;">
 			<h5>
 				<i class="fas fa-list"></i>
