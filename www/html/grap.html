@@ -368,6 +368,25 @@
           </div>
           <div class="row">
             <div class="grap-cont">
+              <div class="tab-grap">
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">작동유량</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">작동 압력</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">이웃 압력</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">쿠션 실린더 에어 압력</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">헤드 캡 N2가스 입력</a>
+                  </li>
+                </ul>
+              </div>
               <div id="chart2">
               </div>
               <script>
@@ -399,15 +418,26 @@
                   xaxis: {
                     type: 'datetime'
                   },
+                  // fill: {
+                  //   type: "gradient",
+                  //   gradient: {
+                  //     type:"vertical",
+                  //     shadeIntensity: 1,
+                  //     opacityFrom: 0.7,
+                  //     opacityTo: 1,
+                  //     stops: [0, 90, 100]
+                  //   }
+                  // },
                   yaxis: [{
                     title: {
-                      text: 'Website Blog',
+                      //text: 'Website Blog',
                     },
 
-                  }, {
+                  },
+                    {
                     opposite: true,
                     title: {
-                      text: 'Social Media'
+                      //text: 'Social Media'
                     }
                   }]
                 };
