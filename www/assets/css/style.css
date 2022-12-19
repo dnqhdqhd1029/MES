@@ -212,7 +212,7 @@ body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav)
 
 /*content-wrapper*/
 .content-wrapper {
-  /* margin-left: 274px !important; 
+  /* margin-left: 274px !important;
   margin-top: 46px !important;*/
   background-color: #2d323f;
   padding-bottom: 20px;
@@ -288,6 +288,7 @@ h2.title {
   background: url(../images/ic-title.png) left center no-repeat;
   padding-left: 40px;
   margin-bottom: 20px;
+  height: 35px;
 }
 
 /*tabel*/
@@ -311,4 +312,12 @@ h2.title {
 .table tbody td {
   text-align: center;
   font-size: 12px;
+}
+
+/*grap-container*/
+.grap-container{
+  height: 100vh;
+}
+.grap-container .row{
+  height: 50%;
 }
