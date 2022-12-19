@@ -273,121 +273,20 @@
     <div class="card cont-wrap  p-4">
 
       <div class="row grap-container">
-        <div class="col-4">
+        <div class="col-7">
           <div class="row">
-            <h2 class="title">공정별 작업 관리</h2>
+            <h2 class="title">출하실적현황</h2>
             <div>테이블 들어갑니다</div>
           </div>
-          <div class="row">
-            <h2 class="title">생성 현황</h2>
-            <div>테이블 들어갑니다</div>
-          </div>
+
 
         </div>
-        <div class="col-8">
-          <div class="row">
-            <div class="col-6">
-              <h2 class="title">실적현황</h2>
-              <div class="grap-cont">
-                <div id="chart">
-                </div>
-                <script>
-                  var options = {
-                    chart: {
-                      type: 'bar',
-                      height: 350,
-                    },
-                    series: [{
-                      name: 'sales',
-                      data: [30,40,45,50,49,60,70,91,125]
-                    }],
-                    xaxis: {
-                      categories: [1991,1992,1993,1994,1995,1996,1997, 1998,1999]
-                    }
-                  }
+        <div class="col-5">
 
-                  var chart = new ApexCharts(document.querySelector("#chart"), options);
-
-                  chart.render();
-                </script>
-              </div>
-            </div>
-            <div class="col-6">
-              <h2 class="title">가동율</h2>
-              <div class="grap-cont">
-                <div id="chart1">
-                </div>
-                <script>
-                  var options = {
-                    series: [{
-                      name: "Desktops",
-                      data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
-                    }],
-                    chart: {
-                      height: 350,
-                      type: 'line',
-                      zoom: {
-                        enabled: false
-                      }
-                    },
-                    dataLabels: {
-                      enabled: true,
-                      style: {
-                        colors: ['#F44336', '#E91E63', '#9C27B0']
-                      }
-
-
-                    },
-                    stroke: {
-                      curve: 'straight'
-                    },
-                    // title: {
-                    //   text: 'Product Trends by Month',
-                    //   align: 'left'
-                    // },
-                    grid: {
-                      row: {
-                        colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-                        opacity: 0.5
-                      },
-                    },
-                    xaxis: {
-                      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
-                    },
-                    fill: {
-                      colors: ['#F44336', '#E91E63', '#9C27B0']
-                    },
-
-                  };
-
-                  var chart = new ApexCharts(document.querySelector("#chart1"), options);
-                  chart.render();
-                </script>
-              </div>
-            </div>
-          </div>
           <div class="row">
             <div class="grap-cont">
-              <div class="tab-grap">
-                <ul class="nav nav-pills">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">작동유량</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">작동 압력</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">이웃 압력</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">쿠션 실린더 에어 압력</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">헤드 캡 N2가스 입력</a>
-                  </li>
-                </ul>
-              </div>
-              <div id="chart2">
+
+              <div id="chart1">
               </div>
               <script>
                 var options = {
@@ -401,7 +300,7 @@
                     data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
                   }],
                   chart: {
-                    height: 350,
+                    height: 400,
                     type: 'line',
                   },
                   stroke: {
@@ -438,6 +337,36 @@
                     opposite: true,
                     title: {
                       //text: 'Social Media'
+                    }
+                  }]
+                };
+
+                var chart = new ApexCharts(document.querySelector("#chart1"), options);
+                chart.render();
+              </script>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="grap-cont">
+              <div id="chart2">
+              </div>
+              <script>
+                var options = {
+                  series: [44, 55, 41, 17, 15],
+                  chart: {
+                    type: 'donut',
+                    height: 350
+                  },
+                  responsive: [{
+                    breakpoint: 480,
+                    options: {
+                      chart: {
+                        width: 200
+                      },
+                      legend: {
+                        position: 'bottom'
+                      }
                     }
                   }]
                 };
