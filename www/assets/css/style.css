@@ -289,6 +289,7 @@ h2.title {
   padding-left: 40px;
   margin-bottom: 20px;
   height: 35px;
+
 }
 
 /*tabel*/
@@ -321,3 +322,79 @@ h2.title {
 .grap-container .row{
   height: 50%;
 }
+/*table.data */
+
+table.data {
+  width: 100%;
+  table-layout: fixed;
+  border-top: 1px solid #ccc !important;
+  vertical-align: middle;
+}
+table.data th {
+  background-color: #75aaea;
+  border: 1px solid #ccc;
+  padding: 5px 8px;
+  color: #fff;
+  font-size: 16px;
+  vertical-align: middle;
+}
+table.data td {
+  border: 1px solid #ccc;
+  padding: 5px 8px !important;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+table.data .flex-justify {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+table.data .flex-justify input {
+  flex: 1;
+}
+
+table.data input[type="text"] {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+table.data input:focus {
+  outline: none;
+}
+table.data select {
+  border: 1px solid #ccc;
+}
+
+table.data.font12 th ,table.data.font12 td{
+  font-size: 12px;
+}
+
+.box {
+  background-color: #262D47;
+  padding: 25px 25px;
+  border-radius: 4px;
+  min-height: 250px;
+}
+
+
+.state{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: gray;
+}
+
+.red{
+  background-color: red;
+}
+.yellow{
+  background-color: orange;
+}
+.green{
+  background-color: green;
+}
+.gray{
+  background-color: gray;
+}
+
+
