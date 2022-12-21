@@ -384,16 +384,16 @@ table.data.font12 th ,table.data.font12 td{
   background-color: gray;
 }
 
-.red{
+.state.red{
   background-color: red;
 }
-.yellow{
+.state.yellow{
   background-color: orange;
 }
-.green{
+.state.green{
   background-color: green;
 }
-.gray{
+.state.gray{
   background-color: gray;
 }
 
