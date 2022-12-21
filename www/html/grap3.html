@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport"
+    content="viewport-fit=cover,width=device-width,height=device-height,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <!-- <link rel="shortcut icon" href="assets/images/favicon.ico" /> -->
+  <title>레이아웃</title>
+  <script src="../assets/js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+  <script type="text/javascript"
+    src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+  <!--grap 관련 추가-->
+  <script src="../assets/js/apexcharts.js"></script>
+
+
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- <link rel="stylesheet" href="../assets/css/style-mobile.css" />
+  <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/common.js"></script> -->
+</head>
+<!--hold-transition sidebar-mini layout-fixed layout-navbar-fixed-->
+
+<body class="">
+  <div class="container">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand">
+      <div class="lnb">
+        <button class="nav-link ic-menu" data-widget="pushmenu" href="#" role="button"> </button>
+
+        <button class="ic-home"></button>
+        <div>생산관리 > 공정작업관리 > 공정별작업관리</div>
+      </div>
+      <div class="setting">
+        관리자 <button><i class="ic-setting"></i></button>
+      </div>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar elevation-2">
+    <!-- Brand Logo -->
+    <a href="#none" class="brand-link">
+      <h1 class="logo">LAKE MATERIALS <b>MES</b></h1>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+          <!-- <li class="nav-item  menu-is-opening">
+                <a href="#" class="nav-link">
+                  <i class=""></i>
+                  <p>기준정보 관리</p>
+                </a>
+                
+              </li> -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i></i>
+              <p>
+                기준정보관리
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i></i>
+              <p>
+                판매관리
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i></i>
+              <p>
+                생산관리
+
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <p>생산계획관리</p>
+                </a>
+              </li>
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link">
+                  <p>공정작업관리</p>
+                </a>
+                <ul class="nav nav-treeview menu-is-opening menu-open">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                      <p>공정별작업관리</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <p>자재/반제품불출관리</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i></i>
+              <p>
+                생산실적관리
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i></i>
+              <p>
+                자잭구매관리
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i></i>
+              <p>
+                출하관리
+
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i></i>
+              <p>
+                품질관리
+
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i></i>
+              <p>
+                재고관리
+
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i></i>
+              <p>
+                인사노무관리
+
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i></i>
+              <p>
+                CS관리
+
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i></i>
+              <p>
+                회계(제조원가)관리
+
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i></i>
+              <p>
+                자산관리
+
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i></i>
+              <p>
+                외상매출금관리
+
+              </p>
+            </a>
+          </li>
+
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+
+
+  <div class="content-wrapper px-4 pt-5 ">
+
+    <div class="card cont-wrap p-4 ">
+      <h2 class="title">2022년 12월 22일 현재 수주/생산/출하실적현황 Dashboard</h2>
+      <div class="row grap-container">
+        <div class="col-7">
+
+          <div class="row">
+
+            <div>
+               <table class="data text-center ">
+
+                    <tr>
+                      <th></th>
+                      <th>판매계획</th>
+                      <th>생산계획</th>
+                      <th>출하계획</th>
+                    </tr>
+                    <tr>
+                      <th>당기누적 계획</th>
+                      <td>35.080</td>
+                      <td>35.080</td>
+                      <td>35.080</td>
+
+                    </tr>
+
+                </table>
+               <table class="data text-center mt-2 ">
+
+                <tr>
+                  <th></th>
+                  <th>판매계획</th>
+                  <th>생산계획</th>
+                  <th>출하계획</th>
+                </tr>
+                <tr>
+                  <th>당기누적 계획</th>
+                  <td>35.080</td>
+                  <td>35.080</td>
+                  <td>35.080</td>
+
+                </tr>
+
+              </table>
+               <table class="data text-center mt-2  ">
+
+                <tr>
+                  <th></th>
+                  <th>판매계획</th>
+                  <th>생산계획</th>
+                  <th>출하계획</th>
+                </tr>
+                <tr>
+                  <th>당기누적 계획</th>
+                  <td>35.080</td>
+                  <td>35.080</td>
+                  <td>35.080</td>
+
+                </tr>
+
+              </table>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="grap-cont">
+              <div id="chart1">
+              </div>
+              <script>
+                var options = {
+                  series: [{
+                    name: 'Website Blog',
+                    type: 'column',
+                    data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
+                  }, {
+                    name: 'Social Media',
+                    type: 'line',
+                    data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
+                  }],
+                  chart: {
+                    height: 400,
+                    type: 'line',
+                  },
+                  stroke: {
+                    width: [0, 4]
+                  },
+                  // title: {
+                  //   text: 'Traffic Sources'
+                  // },
+                  dataLabels: {
+                    enabled: false,
+                    enabledOnSeries: [1]
+                  },
+                  labels: ['01 Jan 2001', '02 Jan 2001', '03 Jan 2001', '04 Jan 2001', '05 Jan 2001', '06 Jan 2001', '07 Jan 2001', '08 Jan 2001', '09 Jan 2001', '10 Jan 2001', '11 Jan 2001', '12 Jan 2001'],
+                  xaxis: {
+                    type: 'datetime'
+                  },
+                  fill: {
+                    type: "fill",
+                    gradient: {
+                      type:"vertical",
+                      shadeIntensity: 1,
+                      opacityFrom: 0.7,
+                      opacityTo: 1,
+                      stops: [0, 90, 100]
+                    }
+                  },
+                  yaxis: [{
+                    title: {
+                      //text: 'Website Blog',
+                    },
+
+                  },
+                    {
+                      opposite: true,
+                      title: {
+                        //text: 'Social Media'
+                      }
+                    }]
+                };
+
+                var chart = new ApexCharts(document.querySelector("#chart1"), options);
+                chart.render();
+              </script>
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <div class="col-5">
+          <h3>주요품목현황</h3>
+          <div class="row mt-0">
+            <div id="chart2">
+            </div>
+            <script>
+              var options = {
+                series: [{
+                  name: 'Website Blog',
+                  type: 'column',
+                  data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
+                }, {
+                  name: 'Social Media',
+                  type: 'line',
+                  data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
+                }],
+                chart: {
+                  height: 400,
+                  type: 'line'
+                },
+                stroke: {
+                  width: [0, 4]
+                },
+                // title: {
+                //   text: 'Traffic Sources'
+                // },
+                dataLabels: {
+                  enabled: false,
+                  enabledOnSeries: [1]
+                },
+                labels: ['01 Jan 2001', '02 Jan 2001', '03 Jan 2001', '04 Jan 2001', '05 Jan 2001', '06 Jan 2001', '07 Jan 2001', '08 Jan 2001', '09 Jan 2001', '10 Jan 2001', '11 Jan 2001', '12 Jan 2001'],
+                xaxis: {
+                  type: 'datetime'
+                },
+                fill: {
+                  type: "fill",
+                  gradient: {
+                    shade: '',
+                    type:"vertical",
+                    shadeIntensity:1,
+                    opacityFrom: 1,
+                    opacityTo: 1,
+                    stops: [0, 50, 100]
+                  },
+                  colors :['#b13cf5']
+                },
+                yaxis: [{
+                  title: {
+                    //text: 'Website Blog',
+                  },
+
+                },
+                  {
+                    opposite: true,
+                    title: {
+                      //text: 'Social Media'
+                    }
+                  }]
+              };
+
+              var chart = new ApexCharts(document.querySelector("#chart2"), options);
+              chart.render();
+            </script>
+          </div>
+
+          <div class="row ">
+            <div id="chart3">
+            </div>
+            <script>
+              var options = {
+                series: [{
+                  name: 'Website Blog',
+                  type: 'column',
+                  data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
+                }, {
+                  name: 'Social Media',
+                  type: 'line',
+                  data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
+                }],
+                chart: {
+                  height: 400,
+                  type: 'line',
+                },
+                stroke: {
+                  width: [0, 4]
+                },
+                // title: {
+                //   text: 'Traffic Sources'
+                // },
+                dataLabels: {
+                  enabled: false,
+                  enabledOnSeries: [1]
+                },
+                labels: ['01 Jan 2001', '02 Jan 2001', '03 Jan 2001', '04 Jan 2001', '05 Jan 2001', '06 Jan 2001', '07 Jan 2001', '08 Jan 2001', '09 Jan 2001', '10 Jan 2001', '11 Jan 2001', '12 Jan 2001'],
+                xaxis: {
+                  type: 'datetime'
+                },
+                fill: {
+                  type: "fill",
+                  gradient: {
+                    type:"vertical",
+                    shadeIntensity: 1,
+                    opacityFrom: 0.7,
+                    opacityTo: 1,
+                    stops: [0, 90, 100],
+
+                  },
+                  colors :['#ff7618']
+                },
+                //colors :['#000'],
+                yaxis: [{
+                  title: {
+                    //text: 'Website Blog',
+                  },
+
+                },
+                  {
+                    opposite: true,
+                    title: {
+                      //text: 'Social Media'
+                    }
+                  }]
+              };
+
+              var chart = new ApexCharts(document.querySelector("#chart3"), options);
+              chart.render();
+            </script>
+          </div>
+
+
+
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+    <!--//card-->
+
+
+
+  </div>
+  </div>
+</div><!--container-->
+</body>
+
+</html>

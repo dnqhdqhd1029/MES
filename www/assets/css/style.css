@@ -317,10 +317,10 @@ h2.title {
 
 /*grap-container*/
 .grap-container{
-  height: 100vh;
+  height: 100%;
 }
 .grap-container .row{
-  height: 50%;
+  /*height: 50%;*/
 }
 /*table.data */
 
@@ -398,3 +398,27 @@ table.data.font12 th ,table.data.font12 td{
 }
 
 
+h5 {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 1.8;
+  letter-spacing: -0.5px;
+  font-weight: 800;
+  background: url(../images/ic-title.png) left -2px no-repeat;
+  padding-left: 40px;
+  display: block;
+  /*margin-bottom: 20px;*/
+}
+h3 {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+h5 i {
+  display: none !important;
+}
+
+h5 small i {
+  display: inline-block !important;
+}
