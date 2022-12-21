@@ -274,107 +274,101 @@
 
       <div class="row grap-container">
         <div class="col-7">
-          <div class="row">
-            <h2 class="title">출하실적현황</h2>
-            <div>테이블 들어갑니다</div>
-          </div>
+          <h2 class="title">출하실적현황</h2>
+          <div>테이블 들어갑니다</div>
 
 
         </div>
         <div class="col-5">
 
-          <div class="row">
-            <div class="grap-cont">
+          <div class="grap-cont">
 
-              <div id="chart1">
-              </div>
-              <script>
-                var options = {
-                  series: [{
-                    name: 'Website Blog',
-                    type: 'column',
-                    data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
-                  }, {
-                    name: 'Social Media',
-                    type: 'line',
-                    data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
-                  }],
-                  chart: {
-                    height: 400,
-                    type: 'line',
+            <div id="chart1">
+            </div>
+            <script>
+              var options = {
+                series: [{
+                  name: 'Website Blog',
+                  type: 'column',
+                  data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
+                }, {
+                  name: 'Social Media',
+                  type: 'line',
+                  data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
+                }],
+                chart: {
+                  height: 400,
+                  type: 'line',
+                },
+                stroke: {
+                  width: [0, 4]
+                },
+                // title: {
+                //   text: 'Traffic Sources'
+                // },
+                dataLabels: {
+                  enabled: true,
+                  enabledOnSeries: [1]
+                },
+                labels: ['01 Jan 2001', '02 Jan 2001', '03 Jan 2001', '04 Jan 2001', '05 Jan 2001', '06 Jan 2001', '07 Jan 2001', '08 Jan 2001', '09 Jan 2001', '10 Jan 2001', '11 Jan 2001', '12 Jan 2001'],
+                xaxis: {
+                  type: 'datetime'
+                },
+                // fill: {
+                //   type: "gradient",
+                //   gradient: {
+                //     type:"vertical",
+                //     shadeIntensity: 1,
+                //     opacityFrom: 0.7,
+                //     opacityTo: 1,
+                //     stops: [0, 90, 100]
+                //   }
+                // },
+                yaxis: [{
+                  title: {
+                    //text: 'Website Blog',
                   },
-                  stroke: {
-                    width: [0, 4]
-                  },
-                  // title: {
-                  //   text: 'Traffic Sources'
-                  // },
-                  dataLabels: {
-                    enabled: true,
-                    enabledOnSeries: [1]
-                  },
-                  labels: ['01 Jan 2001', '02 Jan 2001', '03 Jan 2001', '04 Jan 2001', '05 Jan 2001', '06 Jan 2001', '07 Jan 2001', '08 Jan 2001', '09 Jan 2001', '10 Jan 2001', '11 Jan 2001', '12 Jan 2001'],
-                  xaxis: {
-                    type: 'datetime'
-                  },
-                  // fill: {
-                  //   type: "gradient",
-                  //   gradient: {
-                  //     type:"vertical",
-                  //     shadeIntensity: 1,
-                  //     opacityFrom: 0.7,
-                  //     opacityTo: 1,
-                  //     stops: [0, 90, 100]
-                  //   }
-                  // },
-                  yaxis: [{
-                    title: {
-                      //text: 'Website Blog',
-                    },
 
-                  },
-                    {
+                },
+                  {
                     opposite: true,
                     title: {
                       //text: 'Social Media'
                     }
                   }]
-                };
+              };
 
-                var chart = new ApexCharts(document.querySelector("#chart1"), options);
-                chart.render();
-              </script>
-            </div>
+              var chart = new ApexCharts(document.querySelector("#chart1"), options);
+              chart.render();
+            </script>
           </div>
 
-          <div class="row">
-            <div class="grap-cont">
-              <div id="chart2">
-              </div>
-              <script>
-                var options = {
-                  series: [44, 55, 41, 17, 15],
-                  chart: {
-                    type: 'donut',
-                    height: 350
-                  },
-                  responsive: [{
-                    breakpoint: 480,
-                    options: {
-                      chart: {
-                        width: 200
-                      },
-                      legend: {
-                        position: 'bottom'
-                      }
-                    }
-                  }]
-                };
-
-                var chart = new ApexCharts(document.querySelector("#chart2"), options);
-                chart.render();
-              </script>
+          <div class="grap-cont">
+            <div id="chart2">
             </div>
+            <script>
+              var options = {
+                series: [44, 55, 41, 17, 15],
+                chart: {
+                  type: 'donut',
+                  height: 350
+                },
+                responsive: [{
+                  breakpoint: 480,
+                  options: {
+                    chart: {
+                      width: 200
+                    },
+                    legend: {
+                      position: 'bottom'
+                    }
+                  }
+                }]
+              };
+
+              var chart = new ApexCharts(document.querySelector("#chart2"), options);
+              chart.render();
+            </script>
           </div>
 
 
