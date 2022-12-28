@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>레이아웃</title>
+  <script src="../assets/js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+  <!--grap 관련 추가-->
+  <script src="../assets/js/apexcharts.js"></script>
+
+
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- <link rel="stylesheet" href="../assets/css/style-mobile.css" />
+  <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/common.js"></script> -->
+</head>
+<!--hold-transition sidebar-mini layout-fixed layout-navbar-fixed-->
+
+<body class="">
+  <div class="container">
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand">
+        <div class="lnb">
+          <button class="nav-link ic-menu" data-widget="pushmenu" href="#" role="button"> </button>
+
+          <button class="ic-home"></button>
+          <div>생산관리 > 공정작업관리 > 공정별작업관리</div>
+        </div>
+        <div class="setting">
+          관리자 <button><i class="ic-setting"></i></button>
+        </div>
+
+      </nav>
+      <!-- /.navbar -->
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar elevation-2">
+        <!-- Brand Logo -->
+        <a href="#none" class="brand-link">
+          <h1 class="logo">LAKE MATERIALS <b>MES</b></h1>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+              <!-- <li class="nav-item  menu-is-opening">
+                <a href="#" class="nav-link">
+                  <i class=""></i>
+                  <p>기준정보 관리</p>
+                </a>
+                
+              </li> -->
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    기준정보관리
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    판매관리
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <i></i>
+                  <p>
+                    생산관리
+
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <p>생산계획관리</p>
+                    </a>
+                  </li>
+                  <li class="nav-item menu-open">
+                    <a href="#" class="nav-link">
+                      <p>공정작업관리</p>
+                    </a>
+                    <ul class="nav nav-treeview menu-is-opening menu-open">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                          <p>공정별작업관리</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <p>자재/반제품불출관리</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    생산실적관리
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    자잭구매관리
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    출하관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    품질관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    재고관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    인사노무관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    CS관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    회계(제조원가)관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    자산관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    외상매출금관리
+
+                  </p>
+                </a>
+              </li>
+
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <div class="content-wrapper px-4 ">
+
+        <div class="container-fluid">
+
+          <form id="sFrm">
+            <div class="content-search ">
+              <div class="row">
+                <div class=" input-search">
+                  <div class="row">
+                    <div class="col">
+                      <button>품목명 </button>
+                    </div>
+                    <div class="col">
+                      <button> 품목코드</button>
+                    </div>
+                    <div class="col col-1">
+                      <button>모델</button>
+                    </div>
+                    <div class="col">
+                      <button>품목구분</button>
+                    </div>
+                    <div class="col col-3 flex-justify">
+                      <button class="mr5">제품분류</button>
+                      <button class="mr5">조회구분</button>
+                      <button>전 체</button>
+                    </div>
+                    <div class="col col-1 ">
+                      <button>사업장구분 </button>
+                    </div>
+                    <div class="col col-1">
+                      <button></button>
+                    </div>
+                  </div>
+                  <div class=" row mt20 text-right">
+                    <div class="search-btn">
+                      <button class="btn mr10"><i class="ic-search"></i>조회</button>
+                      <button class="btn mr10"><i class="ic-exle"></i>엑셀</button>
+                      <button class="btn"><i class="ic-reset"></i>초기화</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </form>
+
+          <div id="gridWrapper">
+
+
+            <div class="grap-container">
+              <div id="sub_title">
+                <h2 class="title">제목부분</h2>
+              </div>
+              <div class="row mb-3">
+                <div class="col-3">
+                  <div class="card p-4 card-box">
+                    <diV class="font24">SAC</diV>
+                    <div class="title">
+                      <div class="mb10">$ <b>16</b></div>
+                      <span>계약 월당</span>
+                    </div>
+
+                    <span class="label"> +4 <br /> <span class="font12">YTD</span></span>
+
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div id="chart"></div>
+                  <script>
+                    var options = {
+                      series: [{
+                        name: "Desktops",
+                        data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+                      }],
+                      chart: {
+                        height: 250,
+                        type: 'line',
+                        zoom: {
+                          enabled: false
+                        }
+                      },
+                      dataLabels: {
+                        enabled: false
+                      },
+                      stroke: {
+                        curve: 'straight'
+                      },
+                      title: {
+                        text: 'Product Trends by Month',
+                        align: 'left'
+                      },
+                      grid: {
+                        row: {
+                          colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                          opacity: 0.5
+                        },
+                      },
+                      xaxis: {
+                        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+                      }
+                    };
+
+                    var chart = new ApexCharts(document.querySelector("#chart"), options);
+                    chart.render();
+                  </script>
+                </div>
+                <div class="col-3">
+                  <div id="chart01">
+
+                  </div>
+                  <script>
+                    var options = {
+                      series: [{
+                        data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+                      }],
+                      chart: {
+                        type: 'bar',
+                        height: 250
+                      },
+                      plotOptions: {
+                        bar: {
+                          borderRadius: 4,
+                          horizontal: true,
+                        }
+                      },
+                      dataLabels: {
+                        enabled: false
+                      },
+                      xaxis: {
+                        categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France',
+                          'Japan',
+                          'United States', 'China', 'Germany'
+                        ],
+                      }
+                    };
+
+                    var chart = new ApexCharts(document.querySelector("#chart01"), options);
+                    chart.render();
+                  </script>
+                </div>
+                <div class="col-3">
+                  <div id="chart02"></div>
+                  <script>
+                    var options = {
+                      series: [{
+                        name: 'Actual',
+                        data: [{
+                            x: '2011',
+                            y: 12,
+                            goals: [{
+                              name: 'Expected',
+                              value: 14,
+                              strokeWidth: 2,
+                              strokeDashArray: 2,
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2012',
+                            y: 44,
+                            goals: [{
+                              name: 'Expected',
+                              value: 54,
+                              strokeWidth: 5,
+                              strokeHeight: 10,
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2013',
+                            y: 54,
+                            goals: [{
+                              name: 'Expected',
+                              value: 52,
+                              strokeWidth: 10,
+                              strokeHeight: 0,
+                              strokeLineCap: 'round',
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2014',
+                            y: 66,
+                            goals: [{
+                              name: 'Expected',
+                              value: 61,
+                              strokeWidth: 10,
+                              strokeHeight: 0,
+                              strokeLineCap: 'round',
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2015',
+                            y: 81,
+                            goals: [{
+                              name: 'Expected',
+                              value: 66,
+                              strokeWidth: 10,
+                              strokeHeight: 0,
+                              strokeLineCap: 'round',
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2016',
+                            y: 67,
+                            goals: [{
+                              name: 'Expected',
+                              value: 70,
+                              strokeWidth: 5,
+                              strokeHeight: 10,
+                              strokeColor: '#775DD0'
+                            }]
+                          }
+                        ]
+                      }],
+                      chart: {
+                        height: 250,
+                        type: 'bar'
+                      },
+                      plotOptions: {
+                        bar: {
+                          horizontal: true,
+                        }
+                      },
+                      colors: ['#00E396'],
+                      dataLabels: {
+                        formatter: function (val, opt) {
+                          const goals =
+                            opt.w.config.series[opt.seriesIndex].data[opt.dataPointIndex]
+                            .goals
+
+                          if (goals && goals.length) {
+                            return `${val} / ${goals[0].value}`
+                          }
+                          return val
+                        }
+                      },
+                      legend: {
+                        show: true,
+                        showForSingleSeries: true,
+                        customLegendItems: ['Actual', 'Expected'],
+                        markers: {
+                          fillColors: ['#00E396', '#775DD0']
+                        }
+                      }
+                    };
+
+                    var chart = new ApexCharts(document.querySelector("#chart02"), options);
+                    chart.render();
+                  </script>
+                </div>
+
+              </div>
+
+              <div id="sub_title">
+                <h2 class="title">제목부분</h2>
+              </div>
+              <div class="row mb-3">
+                <div class="col-3">
+                  <div class="card p-4 card-box">
+                    <diV class="font24">SAC</diV>
+                    <div class="title">
+                      <div class="mb10">$ <b>16</b></div>
+                      <span>계약 월당</span>
+                    </div>
+
+                    <span class="label"> +4 <br /> <span class="font12">YTD</span></span>
+
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div id="chart03"></div>
+                  <script>
+                    var options = {
+                      series: [{
+                        name: "Desktops",
+                        data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+                      }],
+                      chart: {
+                        height: 250,
+                        type: 'line',
+                        zoom: {
+                          enabled: false
+                        }
+                      },
+                      dataLabels: {
+                        enabled: false
+                      },
+                      stroke: {
+                        curve: 'straight'
+                      },
+                      title: {
+                        text: 'Product Trends by Month',
+                        align: 'left'
+                      },
+                      grid: {
+                        row: {
+                          colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                          opacity: 0.5
+                        },
+                      },
+                      xaxis: {
+                        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+                      }
+                    };
+
+                    var chart = new ApexCharts(document.querySelector("#chart03"), options);
+                    chart.render();
+                  </script>
+                </div>
+                <div class="col-3">
+                  <div id="chart04">
+
+                  </div>
+                  <script>
+                    var options = {
+                      series: [{
+                        data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+                      }],
+                      chart: {
+                        type: 'bar',
+                        height: 250
+                      },
+                      plotOptions: {
+                        bar: {
+                          borderRadius: 4,
+                          horizontal: true,
+                        }
+                      },
+                      dataLabels: {
+                        enabled: false
+                      },
+                      xaxis: {
+                        categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France',
+                          'Japan',
+                          'United States', 'China', 'Germany'
+                        ],
+                      }
+                    };
+
+                    var chart = new ApexCharts(document.querySelector("#chart04"), options);
+                    chart.render();
+                  </script>
+                </div>
+                <div class="col-3">
+                  <div id="chart05"></div>
+                  <script>
+                    var options = {
+                      series: [{
+                        name: 'Actual',
+                        data: [{
+                            x: '2011',
+                            y: 12,
+                            goals: [{
+                              name: 'Expected',
+                              value: 14,
+                              strokeWidth: 2,
+                              strokeDashArray: 2,
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2012',
+                            y: 44,
+                            goals: [{
+                              name: 'Expected',
+                              value: 54,
+                              strokeWidth: 5,
+                              strokeHeight: 10,
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2013',
+                            y: 54,
+                            goals: [{
+                              name: 'Expected',
+                              value: 52,
+                              strokeWidth: 10,
+                              strokeHeight: 0,
+                              strokeLineCap: 'round',
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2014',
+                            y: 66,
+                            goals: [{
+                              name: 'Expected',
+                              value: 61,
+                              strokeWidth: 10,
+                              strokeHeight: 0,
+                              strokeLineCap: 'round',
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2015',
+                            y: 81,
+                            goals: [{
+                              name: 'Expected',
+                              value: 66,
+                              strokeWidth: 10,
+                              strokeHeight: 0,
+                              strokeLineCap: 'round',
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2016',
+                            y: 67,
+                            goals: [{
+                              name: 'Expected',
+                              value: 70,
+                              strokeWidth: 5,
+                              strokeHeight: 10,
+                              strokeColor: '#775DD0'
+                            }]
+                          }
+                        ]
+                      }],
+                      chart: {
+                        height: 250,
+                        type: 'bar'
+                      },
+                      plotOptions: {
+                        bar: {
+                          horizontal: true,
+                        }
+                      },
+                      colors: ['#00E396'],
+                      dataLabels: {
+                        formatter: function (val, opt) {
+                          const goals =
+                            opt.w.config.series[opt.seriesIndex].data[opt.dataPointIndex]
+                            .goals
+
+                          if (goals && goals.length) {
+                            return `${val} / ${goals[0].value}`
+                          }
+                          return val
+                        }
+                      },
+                      legend: {
+                        show: true,
+                        showForSingleSeries: true,
+                        customLegendItems: ['Actual', 'Expected'],
+                        markers: {
+                          fillColors: ['#00E396', '#775DD0']
+                        }
+                      }
+                    };
+
+                    var chart = new ApexCharts(document.querySelector("#chart05"), options);
+                    chart.render();
+                  </script>
+                </div>
+
+              </div>
+
+              <div id="sub_title">
+                <h2 class="title">제목부분</h2>
+              </div>
+              <div class="row ">
+                <div class="col-3">
+                  <div class="card p-4 card-box">
+                    <diV class="font24">SAC</diV>
+                    <div class="title">
+                      <div class="mb10">$ <b>16</b></div>
+                      <span>계약 월당</span>
+                    </div>
+
+                    <span class="label"> +4 <br /> <span class="font12">YTD</span></span>
+
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div id="chart06"></div>
+                  <script>
+                    var options = {
+                      series: [{
+                        name: "Desktops",
+                        data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+                      }],
+                      chart: {
+                        height: 250,
+                        type: 'line',
+                        zoom: {
+                          enabled: false
+                        }
+                      },
+                      dataLabels: {
+                        enabled: false
+                      },
+                      stroke: {
+                        curve: 'straight'
+                      },
+                      title: {
+                        text: 'Product Trends by Month',
+                        align: 'left'
+                      },
+                      grid: {
+                        row: {
+                          colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                          opacity: 0.5
+                        },
+                      },
+                      xaxis: {
+                        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+                      }
+                    };
+
+                    var chart = new ApexCharts(document.querySelector("#chart06"), options);
+                    chart.render();
+                  </script>
+                </div>
+                <div class="col-3">
+                  <div id="chart07">
+
+                  </div>
+                  <script>
+                    var options = {
+                      series: [{
+                        data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+                      }],
+                      chart: {
+                        type: 'bar',
+                        height: 250
+                      },
+                      plotOptions: {
+                        bar: {
+                          borderRadius: 4,
+                          horizontal: true,
+                        }
+                      },
+                      dataLabels: {
+                        enabled: false
+                      },
+                      xaxis: {
+                        categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France',
+                          'Japan',
+                          'United States', 'China', 'Germany'
+                        ],
+                      }
+                    };
+
+                    var chart = new ApexCharts(document.querySelector("#chart07"), options);
+                    chart.render();
+                  </script>
+                </div>
+                <div class="col-3">
+                  <div id="chart08"></div>
+                  <script>
+                    var options = {
+                      series: [{
+                        name: 'Actual',
+                        data: [{
+                            x: '2011',
+                            y: 12,
+                            goals: [{
+                              name: 'Expected',
+                              value: 14,
+                              strokeWidth: 2,
+                              strokeDashArray: 2,
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2012',
+                            y: 44,
+                            goals: [{
+                              name: 'Expected',
+                              value: 54,
+                              strokeWidth: 5,
+                              strokeHeight: 10,
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2013',
+                            y: 54,
+                            goals: [{
+                              name: 'Expected',
+                              value: 52,
+                              strokeWidth: 10,
+                              strokeHeight: 0,
+                              strokeLineCap: 'round',
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2014',
+                            y: 66,
+                            goals: [{
+                              name: 'Expected',
+                              value: 61,
+                              strokeWidth: 10,
+                              strokeHeight: 0,
+                              strokeLineCap: 'round',
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2015',
+                            y: 81,
+                            goals: [{
+                              name: 'Expected',
+                              value: 66,
+                              strokeWidth: 10,
+                              strokeHeight: 0,
+                              strokeLineCap: 'round',
+                              strokeColor: '#775DD0'
+                            }]
+                          },
+                          {
+                            x: '2016',
+                            y: 67,
+                            goals: [{
+                              name: 'Expected',
+                              value: 70,
+                              strokeWidth: 5,
+                              strokeHeight: 10,
+                              strokeColor: '#775DD0'
+                            }]
+                          }
+                        ]
+                      }],
+                      chart: {
+                        height: 250,
+                        type: 'bar'
+                      },
+                      plotOptions: {
+                        bar: {
+                          horizontal: true,
+                        }
+                      },
+                      colors: ['#00E396'],
+                      dataLabels: {
+                        formatter: function (val, opt) {
+                          const goals =
+                            opt.w.config.series[opt.seriesIndex].data[opt.dataPointIndex]
+                            .goals
+
+                          if (goals && goals.length) {
+                            return `${val} / ${goals[0].value}`
+                          }
+                          return val
+                        }
+                      },
+                      legend: {
+                        show: true,
+                        showForSingleSeries: true,
+                        customLegendItems: ['Actual', 'Expected'],
+                        markers: {
+                          fillColors: ['#00E396', '#775DD0']
+                        }
+                      }
+                    };
+
+                    var chart = new ApexCharts(document.querySelector("#chart08"), options);
+                    chart.render();
+                  </script>
+                </div>
+
+              </div>
+
+
+
+            </div>
+            <!--//grap-container-->
+
+
+          </div>
+          <!--//gridWrapper-->
+        </div>
+        <!--//container-fluid-->
+
+
+      </div>
+      <!--//content-wrapper-->
+
+
+
+    </div>
+    <!--//content-wrapper-->
+  </div>
+  <!--container-->
+</body>
+
+</html>

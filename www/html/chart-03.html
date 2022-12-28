@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>레이아웃</title>
+  <script src="../assets/js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+  <!--grap 관련 추가-->
+  <script src="../assets/js/apexcharts.js"></script>
+
+
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- <link rel="stylesheet" href="../assets/css/style-mobile.css" />
+  <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/common.js"></script> -->
+</head>
+<!--hold-transition sidebar-mini layout-fixed layout-navbar-fixed-->
+
+<body class="">
+  <div class="container">
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand">
+        <div class="lnb">
+          <button class="nav-link ic-menu" data-widget="pushmenu" href="#" role="button"> </button>
+
+          <button class="ic-home"></button>
+          <div>생산관리 > 공정작업관리 > 공정별작업관리</div>
+        </div>
+        <div class="setting">
+          관리자 <button><i class="ic-setting"></i></button>
+        </div>
+
+      </nav>
+      <!-- /.navbar -->
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar elevation-2">
+        <!-- Brand Logo -->
+        <a href="#none" class="brand-link">
+          <h1 class="logo">LAKE MATERIALS <b>MES</b></h1>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+              <!-- <li class="nav-item  menu-is-opening">
+                <a href="#" class="nav-link">
+                  <i class=""></i>
+                  <p>기준정보 관리</p>
+                </a>
+                
+              </li> -->
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    기준정보관리
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    판매관리
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <i></i>
+                  <p>
+                    생산관리
+
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <p>생산계획관리</p>
+                    </a>
+                  </li>
+                  <li class="nav-item menu-open">
+                    <a href="#" class="nav-link">
+                      <p>공정작업관리</p>
+                    </a>
+                    <ul class="nav nav-treeview menu-is-opening menu-open">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                          <p>공정별작업관리</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <p>자재/반제품불출관리</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    생산실적관리
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    자잭구매관리
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    출하관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    품질관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    재고관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    인사노무관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    CS관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    회계(제조원가)관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    자산관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    외상매출금관리
+
+                  </p>
+                </a>
+              </li>
+
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <div class="content-wrapper px-4 ">
+
+        <div class="container-fluid">
+
+          <form id="sFrm">
+            <div class="content-search ">
+              <div class="row">
+                <div class=" input-search">
+                  <div class="row">
+                    <div class="col">
+                      <button>품목명 </button>
+                    </div>
+                    <div class="col">
+                      <button> 품목코드</button>
+                    </div>
+                    <div class="col col-1">
+                      <button>모델</button>
+                    </div>
+                    <div class="col">
+                      <button>품목구분</button>
+                    </div>
+                    <div class="col col-3 flex-justify">
+                      <button class="mr5">제품분류</button>
+                      <button class="mr5">조회구분</button>
+                      <button>전 체</button>
+                    </div>
+                    <div class="col col-1 ">
+                      <button>사업장구분 </button>
+                    </div>
+                    <div class="col col-1">
+                      <button></button>
+                    </div>
+                  </div>
+                  <div class=" row mt20 text-right">
+                    <div class="search-btn">
+                      <button class="btn mr10"><i class="ic-search"></i>조회</button>
+                      <button class="btn mr10"><i class="ic-exle"></i>엑셀</button>
+                      <button class="btn"><i class="ic-reset"></i>초기화</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </form>
+
+          <div id="gridWrapper">
+            <div id="sub_title">
+              <h2 class="title">제목부분</h2>
+            </div>
+
+            <div class="grap-container">
+              <div class="cont">
+                <div id="chart"></div>
+                <script>
+                  var options = {
+                    series: [{
+                      name: 'Marine Sprite',
+                      data: [44, 55, 41, 37, 22, 43, 21]
+                    }, {
+                      name: 'Striking Calf',
+                      data: [53, 32, 33, 52, 13, 43, 32]
+                    }, {
+                      name: 'Tank Picture',
+                      data: [12, 17, 11, 9, 15, 11, 20]
+                    }, {
+                      name: 'Bucket Slope',
+                      data: [9, 7, 5, 8, 6, 9, 4]
+                    }, {
+                      name: 'Reborn Kid',
+                      data: [25, 12, 19, 32, 25, 24, 10]
+                    }],
+                    chart: {
+                      type: 'bar',
+                      height: 350,
+                      stacked: true,
+                      stackType: '100%'
+                    },
+                    plotOptions: {
+                      bar: {
+                        horizontal: true,
+                      },
+                    },
+                    stroke: {
+                      width: 1,
+                      colors: ['#fff']
+                    },
+                    title: {
+                      text: '100% Stacked Bar'
+                    },
+                    xaxis: {
+                      categories: [2008, 2009, 2010, 2011, 2012, 2013, 2014],
+                    },
+                    tooltip: {
+                      y: {
+                        formatter: function (val) {
+                          return val + "K"
+                        }
+                      }
+                    },
+                    fill: {
+                      opacity: 1
+
+                    },
+                    legend: {
+                      position: 'top',
+                      horizontalAlign: 'left',
+                      offsetX: 40
+                    }
+                  };
+
+                  var chart = new ApexCharts(document.querySelector("#chart"), options);
+                  chart.render();
+                </script>
+              </div>
+              <div class="cont">
+                <div id="chart01"></div>
+                <script>
+                  var options = {
+                    series: [{
+                      name: 'Marine Sprite',
+                      data: [44, 55, 41, 37, 22, 43, 21]
+                    }, {
+                      name: 'Striking Calf',
+                      data: [53, 32, 33, 52, 13, 43, 32]
+                    }, {
+                      name: 'Tank Picture',
+                      data: [12, 17, 11, 9, 15, 11, 20]
+                    }, {
+                      name: 'Bucket Slope',
+                      data: [9, 7, 5, 8, 6, 9, 4]
+                    }, {
+                      name: 'Reborn Kid',
+                      data: [25, 12, 19, 32, 25, 24, 10]
+                    }],
+                    chart: {
+                      type: 'bar',
+                      height: 350,
+                      stacked: true,
+                    },
+                    plotOptions: {
+                      bar: {
+                        horizontal: true,
+                        dataLabels: {
+                          total: {
+                            enabled: true,
+                            offsetX: 0,
+                            style: {
+                              fontSize: '13px',
+                              fontWeight: 900
+                            }
+                          }
+                        }
+                      },
+                    },
+                    stroke: {
+                      width: 1,
+                      colors: ['#fff']
+                    },
+                    title: {
+                      text: 'Fiction Books Sales'
+                    },
+                    xaxis: {
+                      categories: [2008, 2009, 2010, 2011, 2012, 2013, 2014],
+                      labels: {
+                        formatter: function (val) {
+                          return val + "K"
+                        }
+                      }
+                    },
+                    yaxis: {
+                      title: {
+                        text: undefined
+                      },
+                    },
+                    tooltip: {
+                      y: {
+                        formatter: function (val) {
+                          return val + "K"
+                        }
+                      }
+                    },
+                    fill: {
+                      opacity: 1
+                    },
+                    legend: {
+                      position: 'top',
+                      horizontalAlign: 'left',
+                      offsetX: 40
+                    }
+                  };
+
+                  var chart = new ApexCharts(document.querySelector("#chart01"), options);
+                  chart.render();
+                </script>
+              </div>
+            </div>
+            <!--//grap-container-->
+
+
+          </div>
+          <!--//gridWrapper-->
+        </div>
+        <!--//container-fluid-->
+
+
+      </div>
+      <!--//content-wrapper-->
+
+
+
+    </div>
+    <!--//content-wrapper-->
+  </div>
+  <!--container-->
+</body>
+
+</html>
