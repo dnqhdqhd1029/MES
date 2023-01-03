@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>레이아웃</title>
+  <script src="../assets/js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+  <!--grap 관련 추가-->
+  <script src="../assets/js/apexcharts.js"></script>
+
+
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- <link rel="stylesheet" href="../assets/css/style-mobile.css" />
+  <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/common.js"></script> -->
+</head>
+<!--hold-transition sidebar-mini layout-fixed layout-navbar-fixed-->
+
+<body class="">
+  <div class="container">
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand">
+        <div class="lnb">
+          <button class="nav-link ic-menu" data-widget="pushmenu" href="#" role="button"> </button>
+
+          <button class="ic-home"></button>
+          <div>생산관리 > 공정작업관리 > 공정별작업관리</div>
+        </div>
+        <div class="setting">
+          관리자 <button><i class="ic-setting"></i></button>
+        </div>
+
+      </nav>
+      <!-- /.navbar -->
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar elevation-2">
+        <!-- Brand Logo -->
+        <a href="#none" class="brand-link">
+          <h1 class="logo">LAKE MATERIALS <b>MES</b></h1>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+              <!-- <li class="nav-item  menu-is-opening">
+                <a href="#" class="nav-link">
+                  <i class=""></i>
+                  <p>기준정보 관리</p>
+                </a>
+                
+              </li> -->
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    기준정보관리
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    판매관리
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <i></i>
+                  <p>
+                    생산관리
+
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <p>생산계획관리</p>
+                    </a>
+                  </li>
+                  <li class="nav-item menu-open">
+                    <a href="#" class="nav-link">
+                      <p>공정작업관리</p>
+                    </a>
+                    <ul class="nav nav-treeview menu-is-opening menu-open">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                          <p>공정별작업관리</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <p>자재/반제품불출관리</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    생산실적관리
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    자잭구매관리
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    출하관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    품질관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    재고관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    인사노무관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    CS관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    회계(제조원가)관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    자산관리
+
+
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i></i>
+                  <p>
+                    외상매출금관리
+
+                  </p>
+                </a>
+              </li>
+
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <div class="content-wrapper px-4 ">
+
+        <div class="container-fluid">
+          <form id="sFrm">
+            <div class="content-search ">
+              <div class="row">
+                <div class=" input-search">
+                  <div class="row">
+                    <div class="col">
+                      <button>품목명 </button>
+                    </div>
+                    <div class="col">
+                      <button> 품목코드</button>
+                    </div>
+                    <div class="col col-1">
+                      <button>모델</button>
+                    </div>
+                    <div class="col">
+                      <button>품목구분</button>
+                    </div>
+                    <div class="col col-3 flex-justify">
+                      <button class="mr5">제품분류</button>
+                      <button class="mr5">조회구분</button>
+                      <button>전 체</button>
+                    </div>
+                    <div class="col col-1 ">
+                      <button>사업장구분 </button>
+                    </div>
+                    <div class="col col-1">
+                      <button></button>
+                    </div>
+                  </div>
+                  <div class=" row mt20 text-right">
+                    <div class="search-btn">
+                      <button class="btn mr10"><i class="ic-search"></i>조회</button>
+                      <button class="btn mr10"><i class="ic-exle"></i>엑셀</button>
+                      <button class="btn"><i class="ic-reset"></i>초기화</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </form>
+
+          <div id="gridWrapper">
+            <div id="sub_title">
+              <h2 class="title">신규 주문서 작성</h2>
+
+            </div>
+
+            <h3 class="title">주문서 공통사항</h3>
+
+            <table class="data mb30">
+              <tr>
+                <th>수주일</th>
+                <td colspan="7"><input type="text" class="input" placeholder="2022-12-23" /></td>
+
+              </tr>
+              <tr>
+                <th>거래처 명</th>
+                <td><input type="text" class="input" placeholder="" /></td>
+                <th>거래처 정보</th>
+                <td colspan="5"></td>
+              </tr>
+              <tr>
+                <th>통화 </th>
+                <td>
+                  <select class="select">
+                    <option>KRW</option>
+                  </select>
+                </td>
+                <th>부과세구분</th>
+                <td>
+                  <select class="select">
+                    <option>과세</option>
+                  </select>
+                </td>
+                <th>판매유형</th>
+                <td>
+                  <select class="select">
+                    <option>국내매출</option>
+                  </select>
+                </td>
+                <th>영업담당</th>
+                <td>
+                  <input type="text" class="input" placeholder="담당자명" />
+                </td>
+              </tr>
+              <tr>
+                <th>츨고조건</th>
+                <td>
+                  <select class="select">
+                    <option>없음</option>
+                  </select>
+                </td>
+                <th>배송구분</th>
+                <td>
+                  <select class="select">
+                    <option>자사선불</option>
+                  </select>
+                </td>
+                <th>배송처</th>
+                <td>
+                  <select class="select">
+                    <option>없음</option>
+                  </select>
+                </td>
+                <th>배송지검색</th>
+                <td><input type="text" class="input" placeholder="검색 ENTER 입력" /></td>
+              </tr>
+              <tr>
+                <th>실배송지</th>
+                <td><input type="text" class="input" placeholder="배송처 명" /></td>
+                <th>수취인</th>
+                <td><input type="text" class="input" placeholder="수취인" /></td>
+                <th>연락처</th>
+                <td colspan="3">
+                  <div class="flex-start">
+                    <input type="text" class="input" style="width: 45%;" placeholder="010-4313-5728" />
+                    <div class="flex-start ml10">
+                      <input type="checkbox" id="SEIL" />
+                      <label for="SEIL" class="font14 ml5">발송처를 SEIL로 지성</label>
+                    </div>
+                  </div>
+
+
+                </td>
+
+              </tr>
+              <tr>
+                <th>우편번호</th>
+                <td>
+                  <div class="flex-justify">
+                    <input type="text" class="input" placeholder=" '-' 제외입력" />
+                    <button type="button" class=" ml5 btn-search btn btn-sm btn-default">
+                      <i class="fa fa-search"></i></button>
+                  </div>
+
+                </td>
+                <th>기본 주소</th>
+                <td colspan="5">
+                  <div class="flex-justify">
+                    <input type="text" class="input mr5" placeholder="" />
+                    <input type="text" class="input" placeholder="" />
+                  </div>
+
+                </td>
+              </tr>
+
+              <tr>
+                <th>상세주소</th>
+                <td><input type="text" class="input" placeholder="" /></td>
+
+                <th>택배 배송메세지</th>
+                <td colspan="5"><input type="text" class="input" placeholder="" /></td>
+              </tr>
+              <tr>
+                <th>OPTION 사항</th>
+                <td colspan="7"><input type="text" class="input" placeholder="주문서 출력시 OPTION 란에 기재할 내용입력" /></td>
+              </tr>
+
+            </table>
+
+            <h3 class="title">주문서 품목추가</h3>
+
+            <table class="data">
+              <tr>
+                <th>납기일</th>
+                <td colspan="7"><input type="text" class="input" placeholder="2022-12-23" /></td>
+
+              </tr>
+              <tr>
+                <th>품명</th>
+                <td><input type="text" class="input" placeholder="품목명" /></td>
+                <th>품명번호</th>
+                <td><input type="text" class="input" disabled placeholder="품목명" /></td>
+                <th>품목옵션</th>
+                <td colspan="3">
+                  <select class="select">
+                    <option>무인쇄</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>가격유형 </th>
+                <td>
+                  <select class="select">
+                    <option>일반단가</option>
+                  </select>
+                </td>
+                <th>수주량</th>
+                <td>
+                  <input type="text" class="input text-right" placeholder="0" />
+                </td>
+                <th>단가</th>
+
+                <td colspan="3">
+                  <div class="flex-start">
+                    <input type="text" class="input text-right" style="width: 45%;" placeholder="0" />
+                    <div class="flex-start ml10">
+                      <input type="checkbox" id="price" />
+                      <label for="price" class="font14 ml5">가격불러오기</label>
+                    </div>
+                  </div>
+
+
+                </td>
+
+              </tr>
+
+              <tr>
+                <th>세부 사항</th>
+                <td colspan="7">
+                  <div class="flex-start">
+                    <input type="text" class="input mr5" placeholder="세부 사항 내용입력" />
+                    <button class="mr5 btn btn-sm btn-primary" style="width: 80px;">품목추가</button>
+                    <button class="btn btn-sm btn-success" style="width: 120px;">엑셀불러오기</button>
+                  </div>
+                </td>
+              </tr>
+
+            </table>
+
+
+          </div>
+          <!--//gridWrapper-->
+        </div>
+        <!--//container-fluid-->
+
+
+      </div>
+      <!--//content-wrapper-->
+
+
+
+    </div>
+    <!--//content-wrapper-->
+  </div>
+  <!--container-->
+</body>
+
+</html>

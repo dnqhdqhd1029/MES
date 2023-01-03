@@ -344,24 +344,74 @@ table.data .flex-justify {
   justify-content: space-between;
   align-items: center;
 }
+
 table.data .flex-justify input {
   flex: 1;
 }
-
+table.data .flex-start {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+table.data .flex {
+  flex: 1;
+}
+table.data label {
+  margin-bottom: 0;
+}
+table.data input {
+  -webkit-appearance: auto;
+}
 table.data input[type="text"] {
   border: 1px solid #ccc;
   width: 100%;
+  font-size: 14px;
+}
+table.data input[type="text"]::placeholder {
+  font-size: 14px;
+}
+table.data input[type="text"]:disabled {
+  background-color: #d1d2d3;
 }
 table.data input:focus {
   outline: none;
 }
+table.data input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
 table.data select {
   border: 1px solid #ccc;
+  font-size: 14px;
 }
 
 table.data.font12 th,
 table.data.font12 td {
   font-size: 12px;
+}
+
+table.data select.select {
+  width: 100%;
+  height: 30px;
+}
+
+table.data .btn-search {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  flex: none;
+  margin-left: 5px;
+}
+table.data .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+table.data .fa-search:before {
+  content: "\f002";
 }
 
 .box {
