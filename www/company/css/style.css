@@ -801,19 +801,19 @@ h2.title {
 }
 
 /*서비스소개*/
-.intro-wrap{
+.intro-wrap {
   padding: 50px 0;
   text-align: center;
 }
 
-.intro-wrap .intro-cont .cont{
+.intro-wrap .intro-cont .cont {
   margin-bottom: 20px;
   padding: 4px;
   color: #333;
   min-height: 70px;
   border-radius: 5px;
 }
-.intro-wrap .intro-cont .cont .flex-justify .tit{
+.intro-wrap .intro-cont .cont .flex-justify .tit {
   height: 100%;
   width: 20%;
   text-align: center;
@@ -823,7 +823,7 @@ h2.title {
   align-items: center;
   font-weight: 800;
 }
-.intro-wrap .intro-cont .cont .flex-justify .txt{
+.intro-wrap .intro-cont .cont .flex-justify .txt {
   height: 100%;
   flex: 1;
   background: #fff;
@@ -834,122 +834,117 @@ h2.title {
   display: flex;
   justify-content: start;
   align-items: center;
-
 }
 
 /*고객센터*/
-.cs-wrap{
+.cs-wrap {
   text-align: center;
   width: 1000px;
   margin: 50px auto;
 }
-.faq-list{
+.faq-list {
   text-align: left;
   border-top: 1px solid #dbdbdb;
 }
-.faq-list ul li{
+.faq-list ul li {
   text-align: left;
   border-bottom: 1px solid #dbdbdb;
   padding: 10px 0;
   font-size: 17px;
 }
-.faq-list ul li button{
+.faq-list ul li button {
   background: url("../images/img-q.png") left top no-repeat;
   display: block;
   width: 100%;
   min-height: 42px;
   padding: 5px 5px 5px 50px;
-  text-align: left ;
+  text-align: left;
   font-size: 17px;
   transition: 0.4s;
   cursor: pointer;
 }
-.faq-list ul li .panel{
-
+.faq-list ul li .panel {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-.faq-list ul li .panel p{
+.faq-list ul li .panel p {
   background: url("../images/img-a.png") 50px 10px no-repeat;
   padding: 10px 10px 10px 110px;
-
 }
 
 /*board-list*/
-.board-list{
+.board-list {
   clear: both;
   margin-bottom: 20px;
 }
-.board-list table{
+.board-list table {
   width: 100%;
   table-layout: fixed;
   border-top: 1px solid #999;
-
 }
-.board-list table th{
+.board-list table th {
   background-color: #f5f5f5;
   padding: 10px;
   border-right: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
 }
-.board-list table td{
+.board-list table td {
   padding: 10px;
   border-bottom: 1px solid #dbdbdb;
   border-right: 1px solid #dbdbdb;
 }
-.board-list table td button{
-  font-size:17px;
+.board-list table td button {
+  font-size: 17px;
   text-align: left;
   display: block;
   width: 100%;
 }
 .board-list table th:last-child,
-.board-list table td:last-child{
+.board-list table td:last-child {
   border-right: none;
 }
 /*board-list*/
-.btn-list{
+.btn-list {
   text-align: right;
   margin-bottom: 20px;
 }
-.btn-list button{
-  margin-left:15px;
+.btn-list button {
+  margin-left: 15px;
 }
 /*board-view*/
-.board-view{
+.board-view {
   margin-bottom: 20px;
 }
-.board-view table{
+.board-view table {
   width: 100%;
   table-layout: fixed;
   border-top: 1px solid #999;
-
 }
-.board-view table th{
+.board-view table th {
   background-color: #f5f5f5;
   padding: 10px;
   border-right: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
   vertical-align: middle;
 }
-.board-view table td{
+.board-view table td {
   padding: 10px;
   border-bottom: 1px solid #dbdbdb;
   border-right: 1px solid #dbdbdb;
   text-align: left;
 }
-.board-view table input{
+.board-view table input {
   border: 1px solid #dbdbdb;
   height: 36px;
   padding-left: 10px;
   width: 100%;
   box-sizing: border-box;
 }
-.board-view table input:focus{
+.board-view table input:focus {
   outline: none;
 }
-.board-view table textarea{
+.board-view table textarea {
   border: 1px solid #dbdbdb;
   padding: 10px;
   height: 300px;
